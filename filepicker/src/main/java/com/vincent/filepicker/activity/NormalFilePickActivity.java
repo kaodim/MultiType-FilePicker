@@ -180,4 +180,11 @@ public class NormalFilePickActivity extends BaseActivity {
 
         mAdapter.refresh(list);
     }
+    
+    @Override
+    public void onBackClick(View view) {
+        Intent intent = new Intent();
+        setResult(RESULT_OK, intent);
+        finish();
+    }
 }
